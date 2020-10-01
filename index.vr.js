@@ -11,7 +11,19 @@ class WeatherSimulator extends Component {
     super();
 
     this.state = {
-      weatherObject: {}
+      weatherObject: {
+        name: '',
+        main: {
+          temp: 0
+        },
+        weather: [
+          {description: ''}
+        ],
+        wind: {
+          deg: 1,
+          speed: 1
+        }
+      }
     }
   }
 
