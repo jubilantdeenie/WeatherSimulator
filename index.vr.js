@@ -2,13 +2,36 @@ import React, { Component } from 'react';
 
 import { View, Text, Pano, AppRegistry, asset } from 'react-vr';
 
+import WeatherCard from './vr/components/WeatherCard';
+
 const api_key = 'cf97c089528d6fe1a93adb4316bf49bb';
 
 class WeatherSimulator extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      weatherObject: {}
+    }
+  }
+
+  componentDidMount() {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Amsterdam&appid=${api_key}`, {
+      method: 'GET'
+    })
+      .then(response => response.json())
+      .then(json => this.setState({weatherObject: json}));
+  }
+
   render() {
     return (
-      <View>
+      <View style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}>
         <Pano source={asset('amsterdam.jpg')}></Pano>
+        <WeatherCard weatherObject={this.state.weatherObject}/>
       </View>
     )
   }
