@@ -4,11 +4,10 @@
   "homepage": "https://github.com/jubilantdeenie/WeatherSimulator/react-gh-pages",
   "private": false,
   "scripts": {
-    "predeploy": "npm run react-devtools bundle",
+    "predeploy": "npm run bundle",
     "deploy": "gh-pages -d bundle",
-    "start": "node -e \"console.log('open browser at http://localhost:8081/vr/\\n\\n');\" && node node_modules/react-native/local-cli/cli.js start",
-    "bundle": "node node_modules/react-vr/scripts/bundle.js",
-    "open": "node -e \"require('xopen')('http://localhost:8081/vr/')\"",
+    "start": "npm react-scripts start",
+    "bundle": "npm react-scripts build",
     "devtools": "react-devtools",
     "test": "jest"
   },
