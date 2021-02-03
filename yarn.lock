@@ -3162,7 +3162,7 @@
     "jest-snapshot" "^19.0.2"
     "jest-util" "^19.0.2"
     "micromatch" "^2.3.11"
-    "node-notifier" "^5.0.1"
+    "node-notifier" "^8.0.1"
     "slash" "^1.0.0"
     "string-length" "^1.0.1"
     "throat" "^3.0.0"
@@ -4136,7 +4136,7 @@
   "resolved" "https://registry.npmjs.org/node-int64/-/node-int64-0.4.0.tgz"
   "version" "0.4.0"
 
-"node-notifier@^5.0.1":
+"node-notifier@^8.0.1":
   "integrity" "sha512-M4UBGcs4jeOK9CjTsYwkvH6/MzuUmGCyTW+kCY7uO+1ZVr0+FHGdPdIf5CCLqAaxnRrWidyoQlNkMIIVwbKB8Q=="
   "resolved" "https://registry.npmjs.org/node-notifier/-/node-notifier-5.4.3.tgz"
   "version" "5.4.3"
