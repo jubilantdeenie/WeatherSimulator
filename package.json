@@ -1,7 +1,7 @@
 {
   "name": "WeatherSimulator",
   "version": "0.0.1",
-  "homepage": "https://jubilantdeenie.github.io/WeatherSimulator/react-gh-pages",
+  "homepage": "https://jubilantdeenie.github.io/WeatherSimulator",
   "private": false,
   "scripts": {
     "predeploy": "npm run bundle",
