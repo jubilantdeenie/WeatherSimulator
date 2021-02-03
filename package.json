@@ -1,8 +1,11 @@
 {
   "name": "WeatherSimulator",
   "version": "0.0.1",
+  "homepage": "https://github.com/jubilantdeenie/WeatherSimulator/react-gh-pages",
   "private": true,
   "scripts": {
+    "predeploy": "npm run bundle",
+    "deploy": "gh-pages -d bundle",
     "start": "node -e \"console.log('open browser at http://localhost:8081/vr/\\n\\n');\" && node node_modules/react-native/local-cli/cli.js start",
     "bundle": "node node_modules/react-vr/scripts/bundle.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/vr/')\"",
@@ -21,6 +24,7 @@
   "devDependencies": {
     "babel-jest": "^19.0.0",
     "babel-preset-react-native": "^1.9.1",
+    "gh-pages": "^3.1.0",
     "jest": "^19.0.2",
     "react-devtools": "^2.5.2",
     "react-test-renderer": "16.0.0",
